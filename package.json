@@ -1,0 +1,28 @@
+{
+  "name": "deoxykev.github.io",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo && npm run build:mermaid && hugo --minify",
+    "build:mermaid": "./node_modules/.bin/mmdc -i ./test.html ./out.svg && cat ./out.svg",
+    "server": "hugo server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deoxykev/deoxykev.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deoxykev/deoxykev.github.io/issues"
+  },
+  "homepage": "https://github.com/deoxykev/deoxykev.github.io#readme",
+  "dependencies": {
+    "mermaid.cli": "^0.5.1"
+  }
+}
