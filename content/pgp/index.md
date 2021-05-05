@@ -1,0 +1,53 @@
+---
+showToc: false
+TocOpen: false
+draft: false
+hidemeta: true
+comments: false
+canonicalURL: "https://deoxy.net/posts/csp"
+disableHLJS: false # to disable highlightjs
+disableShare: true
+disableHLJS: true
+hideSummary: true
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: false
+ShowPostNavLinks: false
+---
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xsBNBFup4BEBCADLuuSVjPoX/zaoaQwTQoFDAJr1tbU0IDCfNXNUStsNMdGd
+yNarIPhA7SbRdI/5tiyocApCFPu/4JTIX4dG2a2JpZZnAP+kTyDkoRYZ4znG
+M7q5HWLlf32KfK7iZpQ+3jmajQi+SSStJJY3+yPrFB5S8mJktvDt2vyLwGbV
+NwAM/kFq2v1DAFSDUzVpropeJzJEChoxJF6bDcOx7WNlSkV/T1kdkcA5n5oV
+018gc0wcXu2G0Jr5M88Xtvw/ZlTn/LSvHMlIOg1KP0iLcrVvvv4uE7Xb4asx
+MSlC5/jUn2SuKkcsO7V1fX3yzS7oss6D2grmVTURkbCcqq2TxH3mil9NABEB
+AAHNIyJrZXZpbkBkZW94eS5uZXQiIDxrZXZpbkBkZW94eS5uZXQ+wsB/BBAB
+CAApBQJbqeARBgsJBwgDAgkQPVnFX3SQn4YEFQgKAgMWAgECGQECGwMCHgEA
+CgkQPVnFX3SQn4bzxQf9Hz3dOOrqNcdScqX+nuj5Hw8Cg@g@6AcstAxkoyHP
+dEwJu7zjEhc/j4DmMbkGSZNWh/KXHuTPQdji0MXysemRP/g5xrsYRsf54gxO
+9YcLA4t/RAbcfgCy3m8zpn8n8p4HQyDPh2INOYuF97JbOICXk9smzma2JXE5
+vmfkfKfRK5XGc9l5wfaxTSvYMzS+NwDwJ3zRsIL/3wOArLzWysZfAgPvzA3U
+0Nasle3nASmVZ6J87SzS8seei6cjwE0uYkaiqxm+
+nYZydF0NZKC+VJuJYq26E++g/cOv0zC5tuanbrQpbuyq4j2fCkh/sL
+Sc7ATQRbqeARAQgAw3OgZvUO9ujWld1RinzVHb7vwPRLeHzZZU7nxNibXH/j
+vRRXnuBGXDfQI/HQAz5d9BTASRmXdMOL11hIaq3ynDkH77Ng8XpgpHwYYs7J
+xjLuEisMzC659VSP7ksFn2Qc6FpuoGplo9PFnr5fF+BHc124kkBUgXneFRQH
+OKCQheS3N0bwjdIcrevigDw+5wvtXTlfe7AuGXPFDz4RHfrbJbqWuelS7FHq
+Bro0YwpIaJpY34P7jXzUq4RIweZtd6CQvTwsc0fI6PD0sfoUAUr+xf4Exp4S
+uq6RAdjgfAoZXJ8eMCjrDBWpGWqWOJEsYRe9stY4TUIhYli4dnDhyZfMgQAR
+AQABwsBpBBgBCAATBQJbqeARCRA9WcVfdJCfhgIbDAAKCRA9WcVfdJCfhsyZ
+B/4gRXZ9utn7PfhnRN9s+f5+xgPMsolYqPSqZRGIyAEqHVWqqGrkxkxerPpI
+bNekGOjzTT//csp/eY9MhQ5neXtHdjVwKq9cgjhW+PAAA/cWCzMISccNUsyI
+qNUVPlsJAK0mo495jygZqOfRH5gfusRWrpStnAZTmI9TuxDuBUfC2jNDv/6z
+uZBsCLk5SKENa8VRGuTlTOK8iCgeMc0wukhtTLnndfToZqldxIv7SXiSM3Gb
+M87xiDMZNrSgvWNjGMomwC9oG5p3KF2A10UKOA9ZYqWIGjC9bbaXM7+Kv97V
+caJRRzgUXG3lxPTAIVkeB4wG2jvxV6fXVMkXr6kyyGxs
+=WKy5
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmRVKrmzGYDM9NftSb6tMbnoYJ3W8oo/2oKdPUjRkj+gm+AGlK353Fuw6fdViKjt9IzIZ7iQmuxlfd6c9y3RtASVybPvQER6ug4ye83unhd0pfxYaUQWQV7YAV3iMrnB/smTldsbJhv6m7PLnjVpEcOyQiWhmLV/xF7orplAw4xL2q2x6H/UqZ69GHPJVhbBcb3eJC9xo+8eTOOoiDEwCvcJolnjwSbdrJJEskYLW5HPXDbjB6uDypw6UYxY/9kr2Cu8sXO5oql
+```
