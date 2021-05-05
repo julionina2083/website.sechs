@@ -2,6 +2,7 @@ baseURL: "https://deoxy.net/"
 title: Kevin Pham 
 paginate: 5
 theme: PaperMod
+publishDir: "docs"
 
 enableRobotsTXT: true
 buildDrafts: false
