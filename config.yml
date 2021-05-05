@@ -9,7 +9,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+privacy:
+  googleAnalytics:
+    disable: true
 
 minify:
     disableXML: true
