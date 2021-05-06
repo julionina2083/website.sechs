@@ -16,6 +16,7 @@ canonicalURL: ""
 disableHLJS: false # to disable highlightjs
 disableShare: true
 disableHLJS: true
+enableMermaid: true
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true
@@ -44,14 +45,8 @@ graph LR;
     C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-{{<mermaid align="left">}}
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-{{< /mermaid >}}
 
+hello :smile: world
 ## Being on the Outlook for Autoforwarding
 
 ### Mimecast Configuration

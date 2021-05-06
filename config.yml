@@ -8,6 +8,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 privacy:
   googleAnalytics:
@@ -26,8 +27,12 @@ params:
     author: Kevin Pham
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light
+    defaultTheme: light # dark, light, auto
+    disableTypeIt: false
     disableThemeToggle: false
+
+    mermaidDarkTheme: "%%{init: {'theme':'dark'}}%%"
+    mermaidLightTheme: "%%{init: {'theme':'forest'}}%%"
 
     ShowReadingTime: true
     ShowShareButtons: true
@@ -75,6 +80,10 @@ params:
     homeInfoParams:
         Title: "(mis)adventures in computing"
         Content: a technical infosec blog
+        typeIt: true
+        string1: "foo"
+        string2: "bar"
+        string2: "baz"
 
     socialIcons:
         - name: twitter

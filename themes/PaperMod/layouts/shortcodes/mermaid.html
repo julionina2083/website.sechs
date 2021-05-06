@@ -1,2 +1,12 @@
-<script src="/js/mermaid.min.js"></script>
-<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">{{ safeHTML .Inner }}</div>
+<span class="mermaidspan"></span>
+<script>
+  if (document.querySelector('body').getAttribute('class') != "dark") {
+    document.querySelectorAll('.mermaidspan').forEach(el => {
+      el.innerHTML = '<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">{{ .Site.Params.mermaidLightTheme }}{{ safeHTML .Inner }}</div>'
+    })
+  } else {
+    document.querySelectorAll('.mermaidspan').forEach(el => {
+      el.innerHTML = '<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">{{ .Site.Params.mermaidDarkTheme }}{{ safeHTML .Inner }}</div>'
+    })
+  }
+</script>

