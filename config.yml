@@ -32,7 +32,7 @@ params:
     disableThemeToggle: false
 
     mermaidDarkTheme: "%%{init: {'theme':'dark'}}%%"
-    mermaidLightTheme: "%%{init: {'theme':'forest'}}%%"
+    mermaidLightTheme: "%%{init: {'theme':'base'}}%%"
 
     ShowReadingTime: true
     ShowShareButtons: true

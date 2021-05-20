@@ -10,6 +10,16 @@
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 
+{{- if .Params.enableAsciiCinema }}
+<link rel="stylesheet" type="text/css" href="/css/asciinema-player.css" />
+{{- end }} 
+
+{{- if .Params.enableuPlot }}
+<link rel="stylesheet" type="text/css" href="/css/uPlot.min.css" />
+{{- end }} 
+
+
+
 {{- /* Meta */}}
 {{- if .IsHome }}
 {{ with .Site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />{{ end }}

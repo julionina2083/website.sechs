@@ -1,5 +1,12 @@
 {{- define "main" }}
 
+{{- if .Params.enableECharts }}
+  <script src="/js/echarts.common.min.js"></script>
+{{- end }}
+{{- if .Params.enableuPlot }}
+  <script src="/js/uPlot.iife.min.js"></script>
+{{- end }}
+
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -31,6 +38,12 @@
   {{- if .Params.enableMermaid }}
     <script src="/js/mermaid.min.js"></script>
   {{- end }}
+
+  {{- if .Params.enableAsciiCinema }}
+    <script src="/js/asciinema-player.js"></script>
+  {{- end }}
+
+
 
   <footer class="post-footer">
     {{- if .Params.tags }}
