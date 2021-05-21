@@ -1,3 +1,102 @@
+  .window {
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.4em;
+    box-shadow:
+    0 0    1px  0px  #00000077,
+      0 10px 20px 1px  #00000033,
+        0 25px 50px 10px #00000000;
+        background: #e3e3e3;
+    }
+
+      .window-header {
+        background: linear-gradient(white, #eee 1px, #ccc);
+        text-align: center;
+        position: relative;
+        user-select: none;
+      }
+      .dark .window-header {
+        background: linear-gradient(#747173, #3a3538, #3a3538, #3a3538, #3a3538, #3a3538, #3a3538, #3a3538);
+        text-align: center;
+        position: relative;
+        user-select: none;
+      }
+      .window-header-btns {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 8px;
+        display: flex;
+      }
+      .window-header__btn {
+        padding: 0;
+        width: 12px;
+        height: 12px;
+        display: block;
+        border: none;
+        border-radius: 50%;
+        margin-right: 8px;
+        box-shadow: inset 0 0 0px .5px #00000033;
+      }
+      .window-header__btn--close {
+        background: tomato;
+      }
+      .window-header__btn--minimize {
+        background: orange;
+      }
+      .window-header__btn--maximize {
+        background: limegreen;
+      }
+      .window-header__btn--disabled {
+        background: #ccc;
+      }
+
+      .resize {
+        position: absolute;
+      /*   background: cyan; */
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      .resize--top {
+        height: 5px;
+        cursor: ns-resize;
+      }
+      .resize--right {
+        width: 5px;
+        left: auto;
+        cursor: ew-resize;
+      }
+      .resize--bottom {
+        height: 5px;
+        top: auto;
+        cursor: ns-resize;
+      }
+      .resize--left {
+        left: 0;
+        width: 5px;
+        cursor: ew-resize;
+      }
+
+      .window__body {
+        flex-grow: 1;
+        padding: 3px 5px;
+        overflow: auto;
+        background: white;
+        font-family: Monaco, monospace;
+        font-size: 11px;
+        color: black;
+        cursor: text;
+      }
+      .window__body .text:focus {
+        outline: 0;
+        caret-color: transparent;
+      }
+
 .asciinema-player-wrapper {
   position: relative;
   text-align: center;
@@ -116,7 +215,6 @@
 }
 .asciinema-player-wrapper .asciinema-player {
   text-align: left;
-  display: inline-block;
   padding: 0px;
   position: relative;
   box-sizing: content-box;
@@ -131,13 +229,13 @@
   -webkit-box-sizing: content-box;
   overflow: hidden;
   padding: 0;
-  margin: 0px;
+  margin: 0px !important;
   display: block;
   white-space: pre;
   border: 0;
   word-wrap: normal;
   word-break: normal;
-  border-radius: 0;
+  border-radius: 0 !important;
   border-style: solid;
   cursor: text;
   border-width: 0.5em;
@@ -176,7 +274,27 @@
 .asciinema-terminal.font-big {
   font-size: 24px;
 }
-.asciinema-player .control-bar {
+.dark .asciinema-player .control-bar {
+  width: 100%;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.8);
+  /* no gradient fallback */
+  background: -moz-linear-gradient(top, rgba(233, 233, 233, 0.5) 0%, #ddd 25%, #ccc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(233, 233, 233, 0.5) 0%, #ddd 25%, #ccc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(233, 233, 233, 0.5) 0%, #ddd 25%, #ccc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #bbbbbb;
+  box-sizing: content-box;
+  line-height: 1;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  transition: bottom 0.15s linear;
+}
+
+.dark .asciinema-player .control-bar {
   width: 100%;
   height: 32px;
   background: rgba(0, 0, 0, 0.8);
@@ -199,8 +317,11 @@
   box-sizing: inherit;
   font-size: 0;
 }
-.asciinema-player .control-bar svg.icon path {
+.dark .asciinema-player .control-bar svg.icon path {
   fill: #bbbbbb;
+}
+.asciinema-player .control-bar svg.icon path {
+  fill: #3e3434;
 }
 .asciinema-player .control-bar .playback-button {
   display: block;
@@ -210,6 +331,7 @@
   width: 12px;
   padding: 10px;
 }
+
 .asciinema-player .control-bar .playback-button svg {
   height: 12px;
   width: 12px;
@@ -252,22 +374,36 @@
   padding-top: 15px;
   font-size: 0;
 }
-.asciinema-player .control-bar .progressbar .bar .gutter {
+
+.dark .asciinema-player .control-bar .progressbar .bar .gutter {
   display: block;
   height: 3px;
   background-color: #333;
 }
-.asciinema-player .control-bar .progressbar .bar .gutter span {
+.dark .asciinema-player .control-bar .progressbar .bar .gutter span {
   display: inline-block;
   height: 100%;
   background-color: #bbbbbb;
   border-radius: 3px;
 }
+
+.asciinema-player .control-bar .progressbar .bar .gutter {
+  display: block;
+  height: 3px;
+  background-color: #b0b0b0;
+}
+.asciinema-player .control-bar .progressbar .bar .gutter span {
+  display: inline-block;
+  height: 100%;
+  background-color: #3e3434;
+  border-radius: 3px;
+}
+
 .asciinema-player .control-bar.live .progressbar .bar {
   cursor: default;
 }
 .asciinema-player .control-bar .fullscreen-button {
-  display: block;
+  display: none;
   float: right;
   width: 14px;
   height: 14px;
@@ -1880,8 +2016,8 @@
 }
 .asciinema-theme-asciinema .asciinema-terminal {
   color: #cccccc;
-  background-color: #121314;
-  border-color: #121314;
+  background-color: #2e2e33 !important;
+  border-color: #2e2e33;
 }
 .asciinema-theme-asciinema .fg-bg {
   color: #121314;
@@ -1997,7 +2133,7 @@
 }
 .asciinema-theme-tango .asciinema-terminal {
   color: #cccccc;
-  background-color: #121314;
+  background-color: #121314 !important;
   border-color: #121314;
 }
 .asciinema-theme-tango .fg-bg {
@@ -2114,7 +2250,7 @@
 }
 .asciinema-theme-solarized-dark .asciinema-terminal {
   color: #839496;
-  background-color: #002b36;
+  background-color: #002b36 !important;
   border-color: #002b36;
 }
 .asciinema-theme-solarized-dark .fg-bg {
@@ -2221,7 +2357,7 @@
 }
 .asciinema-theme-solarized-light .asciinema-terminal {
   color: #657b83;
-  background-color: #fdf6e3;
+  background-color: #fdf6e3 !important;
   border-color: #fdf6e3;
 }
 .asciinema-theme-solarized-light .fg-bg {
@@ -2446,7 +2582,7 @@
 /* Based on Monokai from base16 collection - https://github.com/chriskempson/base16 */
 .asciinema-theme-monokai .asciinema-terminal {
   color: #f8f8f2;
-  background-color: #272822;
+  background-color: #272822 !important;
   border-color: #272822;
 }
 .asciinema-theme-monokai .fg-bg {

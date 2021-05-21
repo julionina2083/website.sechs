@@ -1,18 +1,55 @@
-<asciinema-player
-	src="{{ .Page.RelPermalink }}/{{ .Get "file" }}"
-	cols="{{ if .Get "cols" }}{{ .Get "cols" }}{{ else }}640{{ end }}"
-	rows="{{ if .Get "rows" }}{{ .Get "rows" }}{{ else }}15{{ end }}"
-	{{ if .Get "autoplay" }}autoplay="{{ .Get "autoplay" }}"{{ end }}
-	{{ if .Get "preload" }}preload="{{ .Get "preload" }}"{{ end }}
-	{{ if .Get "loop" }}loop="{{ .Get "loop" }}"{{ end }}
-	start-at="{{ if .Get "start-at" }}{{ .Get "start-at" }}{{ else }}0{{ end }}"
-	speed="{{ if .Get "speed" }}{{ .Get "speed" }}{{ else }}1{{ end }}"
-	{{ if .Get "idle-time-limit" }}idle-time-limit="{{ .Get "idle-time-limit" }}"{{ end }}
-	{{ if .Get "poster" }}poster="{{ .Get "poster" }}"{{ end }}
-	{{ if .Get "font-size" }}font-size="{{ .Get "font-size" }}"{{ end }}
-	{{ if .Get "theme" }}theme="{{ .Get "theme" }}"{{ end }}
-	{{ if .Get "title" }}title="{{ .Get "title" }}"{{ end }}
-	{{ if .Get "author" }}author="{{ .Get "author" }}"{{ end }}
-	{{ if .Get "author-url" }}author-url="{{ .Get "author-url" }}"{{ end }}
-	{{ if .Get "author-img-url" }}author-img-url="{{ .Get "author-img-url" }}"{{ end }}
-></asciinema-player>
+{{- $id := dict "Scratch" .Page.Scratch | partial "function/id.html" -}}
+<div class="window" id="{{ $id }}">
+  <div class="window-header">
+    <div class="window-header-btns">
+      <button class="window-header__btn window-header__btn--close">
+      </button>
+      <button class="window-header__btn window-header__btn--minimize">
+      </button>
+      <button class="window-header__btn window-header__btn--maximize">
+      </button>
+    </div>
+{{ if .Get "title" }}
+  {{ .Get "title" }}
+{{ else }}
+  Terminal - zsh
+{{ end }}
+  </div>
+<span class="asciinema-player"></span>
+</div>
+<script>
+  if (document.querySelector('body').getAttribute('class') != "dark") {
+    document.querySelectorAll('.asciinema-player').forEach(el => {
+      el.innerHTML = '<asciinema-player src="{{ .Page.RelPermalink }}/{{ .Get "file" }}" cols="{{ if .Get "cols" }}{{ .Get "cols" }}{{ else }}640{{ end }}" rows="{{ if .Get "rows" }}{{ .Get "rows" }}{{ else }}15{{ end }}" {{ if .Get "autoplay" }} autoplay="{{ .Get "autoplay" }}" {{ end }} {{ if .Get "preload" }} preload="{{ .Get "preload" }}" {{ end }} {{ if .Get "loop" }} loop="{{ .Get "loop" }}" {{ end }} start-at="{{ if .Get "start-at" }}{{ .Get "start-at" }}{{ else }} 0 {{ end }} " speed="{{ if .Get "speed" }}{{ .Get "speed" }}{{ else }}1{{ end }}" {{ if .Get "idle-time-limit" }} idle-time-limit="{{ .Get "idle-time-limit" }}" {{ end }} {{ if .Get "poster" }} poster="{{ .Get "poster" }}" {{ end }} {{ if .Get "font-size" }} font-size="{{ .Get "font-size" }}"{{ end }} theme="solarized-light" {{ if .Get "title" }} title="{{ .Get "title" }}" {{ end }} {{ if .Get "author" }} author="{{ .Get "author" }}" {{ end }} {{ if .Get "author-url" }} author-url="{{ .Get "author-url" }}" {{ end }} {{ if .Get "author-img-url" }} author-img-url="{{ .Get "author-img-url" }}" {{ end }}></asciinema-player>'
+    })
+  } else {
+    document.querySelectorAll('.asciinema-player').forEach(el => {
+      el.innerHTML = '<asciinema-player src="{{ .Page.RelPermalink }}/{{ .Get "file" }}" cols={{ if .Get "cols" }}{{ .Get "cols" }}{{ else }}640{{ end }} rows={{ if .Get "rows" }}{{ .Get "rows" }}{{ else }}15{{ end }} {{ if .Get "autoplay" }}autoplay="{{ .Get "autoplay" }}"{{ end }} {{ if .Get "preload" }} preload="{{ .Get "preload" }}"{{ end }} {{ if .Get "loop" }} loop="{{ .Get "loop" }}"{{ end }} start-at="{{ if .Get "start-at" }}{{ .Get "start-at" }}{{ else }}0{{ end }} "speed="{{ if .Get "speed" }}{{ .Get "speed" }}{{ else }}1{{ end }}"{{ if .Get "idle-time-limit" }} idle-time-limit="{{ .Get "idle-time-limit" }}"{{ end }}{{ if .Get "poster" }} poster="{{ .Get "poster" }}"{{ end }}{{ if .Get "font-size" }} font-size="{{ .Get "font-size" }}"{{ end }} theme="asciinema"{{ if .Get "title" }} title="{{ .Get "title" }}"{{ end }}{{ if .Get "author" }} author="{{ .Get "author" }}"{{ end }}{{ if .Get "author-url" }} author-url="{{ .Get "author-url" }}"{{ end }}{{ if .Get "author-img-url" }} author-img-url="{{ .Get "author-img-url" }}"{{ end }}></asciinema-player>'
+    })
+  }
+</script>
+
+<script>
+//fn = async () => {
+//await new Promise(r => setTimeout(r, 2000));
+window.addEventListener('DOMContentLoaded', function() {
+document.querySelector('#{{ $id }} > .window-header > .window-header-btns > .window-header__btn--close').onclick = () => {
+  document.querySelector('#{{ $id }}').remove()
+}
+
+document.querySelector('#{{ $id }} > .window-header > .window-header-btns > .window-header__btn--maximize').onclick = () => {
+	document.querySelector('#{{ $id }} *> .fullscreen-button').click()
+}
+
+document.querySelector('#{{ $id }} > .window-header > .window-header-btns > .window-header__btn--minimize').onclick = () => {
+	minBtn = document.querySelector('#{{ $id }} *> .asciinema-player')
+  if (minBtn.style.display === "none") {
+    minBtn.style.display = "block"
+  } else {
+    minBtn.style.display = "none"
+  }
+}
+})
+//};
+//fn()
+</script>
