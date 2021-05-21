@@ -20,7 +20,6 @@
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
       {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
     </div>
     {{- end }}
   </header>
@@ -32,12 +31,15 @@
   <div class="post-content">
     {{- partial "anchored_headings.html" .Content -}}
   </div>
+
   {{- if .Params.enableMermaid }}
-    <script src="/js/mermaid.min.js"></script>
+    {{- $mermaid := slice (resources.Get "js/mermaid.js") | resources.Concat "assets/js/mermaid.js" | minify }}
+    <script defer crossorigin="anonymous" src="{{ $mermaid.RelPermalink }}"></script>
   {{- end }}
 
   {{- if .Params.enableAsciiCinema }}
-    <script src="/js/asciinema-player.js"></script>
+    {{- $asciinemaa := slice (resources.Get "js/asciinema-player.js") | resources.Concat "assets/js/asciinema-player.js" | minify }}
+    <script defer crossorigin="anonymous" src="{{ $asciinemaa.RelPermalink }}"></script>
   {{- end }}
 
 

@@ -67,6 +67,7 @@
 }
 
 .entry-footer {
+    font-family: 'Roboto Mono', monospace;
     color: var(--secondary);
     font-size: 13px
 }

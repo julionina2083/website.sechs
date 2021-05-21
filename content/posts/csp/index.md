@@ -21,7 +21,7 @@ enableAsciiCinema: false
 enableECharts: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
+ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
 cover:
@@ -178,7 +178,7 @@ When the browser loads, click on the extension icon and start a new recording.
 Then, press enter to start recursively visiting all the URLs with the script.
 
 ![Fast Typing](./fast_typing.gif)
-![Quick CSP Demo](./csp.gif)
+![Quick CSP Demo](./csp.webm)
 
 Be mindful of being banned if there is an anti-bot service running on the site. Set a delay between page loads if necessary.
 

@@ -15,7 +15,8 @@
 
 .post-meta,
 .breadcrumbs {
-    color: var(--secondary);
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary);
     font-size: 14px;
     display: flex;
     flex-wrap: wrap
@@ -150,7 +151,7 @@
 }
 
 .post-content .highlight table {
-    border-radius: var(--radius)
+    border-radius: var(--radius);
 }
 
 .post-content .highlight:not(table),
@@ -200,7 +201,7 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', Menlo, Monaco, 'Courier New', Courier, monospace;
     font-size: .78em;
     line-height: 1.5;
     background: var(--code-bg);

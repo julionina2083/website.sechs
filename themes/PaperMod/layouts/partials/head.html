@@ -10,9 +10,6 @@
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 
-{{- if .Params.enableAsciiCinema }}
-<link rel="stylesheet" type="text/css" href="/css/asciinema-player.css" />
-{{- end }} 
 
 
 {{- /* Meta */}}
@@ -38,18 +35,23 @@
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
 
+<link href="/font/roboto.ttf" rel="stylesheet">
+
 {{- /* Styles */}}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
 {{- $reset := (resources.Get "css/core/reset.css") }}
 {{- $media := (resources.Get "css/core/zmedia.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
+{{- $isAsciiCinemaEnabled := (.Site.Params.assets.enableAsciiCinema | default false) }}
+{{- $asjs := (cond ($isAsciiCinemaEnabled) (resources.Get "css/asciinema-player.css") (" " | resources.FromString "assets/css/hljs-blank.css")) }}
+
 {{- /* include `an-old-hope` if hljs is on */}}
 {{- $isHLJSdisabled := (.Site.Params.assets.disableHLJS | default false) }}
 {{- $hljs := (cond ($isHLJSdisabled) (" " | resources.FromString "assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
 
 {{- /* order is important */}}
-{{- $core := (slice $theme_vars $reset $common $hljs $media) | resources.Concat "assets/css/core.css" }}
+{{- $core := (slice $theme_vars $reset $common $hljs $media $asjs) | resources.Concat "assets/css/core.css" }}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" }}
 
 {{- /* bundle all required css */}}

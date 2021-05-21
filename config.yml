@@ -49,6 +49,7 @@ params:
 
     assets:
         disableHLJS: true # to disable highlight.js
+        enableAsciiCinema: true
         # disableFingerprinting: true
         favicon: ""
         favicon16x16: ""
@@ -78,7 +79,7 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "(mis)adventures in computing"
+        Title: "Adventures in computing"
         Content: a technical infosec blog
         typeIt: true
         string1: "foo"
@@ -86,12 +87,6 @@ params:
         string2: "baz"
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/twi"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
-        - name: github
-          url: "https://github.com/"
 
     analytics:
         google:
