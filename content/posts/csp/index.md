@@ -17,6 +17,8 @@ disableHLJS: false # to disable highlightjs
 disableShare: true
 disableHLJS: true
 enableMermaid: true
+enableAsciiCinema: false
+enableECharts: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true

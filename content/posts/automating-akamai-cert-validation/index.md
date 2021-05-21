@@ -21,12 +21,12 @@ enableECharts: false
 enableAsciiCinema: true
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
+ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
 cover:
     image: "/posts/automating-akamai-cert-validation/automation-concept.jpg" # image path/url
-    alt: "Email exifration" # alt text
+    alt: "automtion concept" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
