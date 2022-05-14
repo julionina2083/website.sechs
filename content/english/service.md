@@ -16,45 +16,37 @@ service:
   subtitle : "Services"
   title : "Our Service Area"
   service_item:
-  - title : "Networking"
-    icon : "far fa-object-ungroup"
-    icon_color : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Hybrid Cloud Security Services"
+    image : "images/icon/91.png"
+    content : "Ensure your journey to the cloud is a secure one. Secure enterprise data across multiple IT enviroments."
 
-  - title : "Social Activity"
-    icon : "fas fa-users"
-    icon_color : "yellow" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Managed Threat Intelligence"
+    image : "images/icon/62.png"
+    content : "Unlock the value of your security appliance investments by tapping into global threat feeds."
 
-  - title : "Web Design"
-    icon : "fas fa-desktop"
-    icon_color : "purple" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Supply Chain Security"
+    image : "images/icon/66.png"
+    content : "Stop threats before they enter your network. Risk management for 3rd party applications."
 
-  - title : "Cloud Service"
-    icon : "fas fa-cloud"
-    icon_color : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Security Automation"
+    image : "images/icon/20.png"
+    content : "Automate. Integrate. Achieve detection & response at machine speed-- freeing up staffing requirements."
     
-  - title : "Consulting"
-    icon : "far fa-comments"
-    icon_color : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Phishing Detection & Reponse"
+    image : "images/icon/30.png"
+    content : "No two organizations are alike. Neither are phishing threats. Tailored detection engineering for your email enviroment."
     
-  - title : "SEO Optimization"
-    icon : "fas fa-search-plus"
-    icon_color : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Deep-Dive Penetration Testing"
+    image : "images/icon/50.png"
+    content : "Find hidden risks in your environment that others miss. <br>When you need more than a vulnerability scanner report-- we deliver."
     
-  - title : "Usability Testing"
-    icon : "fas fa-chart-line"
-    icon_color : "orange" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Staff Augmentation"
+    image : "images/icon/25.png"
+    content : "We are a force multiplier for your security team.<br>Fill the talent gap with security analysts, engineers, and specialists."
     
-  - title : "UX Prototyping"
-    icon : "fab fa-wpexplorer"
-    icon_color : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+  - title : "Security Monitoring & Response"
+    image : "images/icon/81.png"
+    content : "Stop attackers in their tracks.<br><br>Complete managed security across endpoint, network & cloud frontiers."
 
 
 ############################### Features #####################################
@@ -64,17 +56,14 @@ feature:
   title : "exclusive features"
   feature_item:
   - title : "Exclusive Design"
-    icon : "fas fa-desktop"
-    icon_color : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+    image : "images/icon/25.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
     
   - title : "Easy Customize"
-    icon : "fas fa-cogs"
-    icon_color : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+    image : "images/icon/25.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
     
   - title : "Extreme Security"
-    icon : "fas fa-shield-alt"
-    icon_color : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+    image : "images/icon/25.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
 ---

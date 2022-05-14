@@ -4,7 +4,7 @@
 
   // Preloader js    
   $(window).on('load', function () {
-    $('.preloader').fadeOut(700);
+    $('.preloader').fadeOut(300);
   });
 
   //   navfixed
@@ -32,7 +32,7 @@
   function counter() {
     var oTop;
     if ($('.counter').length !== 0) {
-      oTop = $('.counter').offset().top - window.innerHeight;
+      oTop = $('.counter').offset().top - window.innerHeight - 200;
     }
     if ($(window).scrollTop() > oTop) {
       $('.counter').each(function () {
@@ -43,7 +43,7 @@
         }).animate({
           countNum: countTo
         }, {
-          duration: 2000,
+          duration: 300,
           easing: 'swing',
           step: function () {
             $this.text(Math.floor(this.countNum));
@@ -164,11 +164,11 @@
   setTimeout(function () {
     AOS.init({
       once: true,
-      offset: 250,
+      offset: 100,
       easing: 'ease',
-      duration: 800
+      duration: 400
     });
-  }, 500);
+  }, 0);
 
 	// map initialize
 	$(map);

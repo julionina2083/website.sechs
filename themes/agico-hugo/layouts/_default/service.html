@@ -17,9 +17,7 @@
       <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="{{$delay}}">
         <div class="text-center shadow card py-3 border-0 rounded-sm">
           <div class="card-body">
-            <i class="icon-lg icon-bg-square mb-5 icon-{{.icon_color}}">
-              <i class="{{ .icon }}"></i>
-            </i>
+            <img class="img-fluid p-2" src="/{{ .image }}"></img>
             <h4 class="mb-3">{{ .title }}</h4>
             <p>{{ .content | markdownify }}</p>
           </div>
