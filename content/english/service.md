@@ -5,7 +5,7 @@ watermark: "Service"
 # page header background image
 page_header_image: "images/background/about.jpg"
 # meta description
-description : "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
+description : "Our team of expert Cybersecurity Specialists assess, research, evaluate, develop, implement, and manage the best solutions implement your company’s specific security needs. We go beyond the technology to safeguard against cyber-attacks."
 
 layout : "service"
 draft : false
@@ -52,18 +52,18 @@ service:
 ############################### Features #####################################
 feature:
   enable : true
-  subtitle : "fetures"
-  title : "exclusive features"
+  subtitle : "Security Montioring & Analysis"
+  title : "Managed Services For Today's Threats"
   feature_item:
-  - title : "Exclusive Design"
-    image : "images/icon/25.png"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
+  - title : "Endpoint Security"
+    image : "images/xicons/22.png"
+    content : "Event log monitoring, advanced breach detection, threat hunting, intrusion detection, EDR integrations and more."
     
-  - title : "Easy Customize"
-    image : "images/icon/25.png"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
+  - title : "Network Security"
+    image : "images/xicons/26.png"
+    content : "Firewall log monitoring integrated with real-time threat intelligence and malicious connection alerting."
     
-  - title : "Extreme Security"
-    image : "images/icon/25.png"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
+  - title : "Cloud Security"
+    image : "images/xicons/54.png"
+    content : "Secure your cloud environment with Microsoft 365 security event log monitoring, Azure AD and UEBA monitoring."
 ---

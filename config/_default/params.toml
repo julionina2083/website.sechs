@@ -22,6 +22,10 @@ search = false
 # custom script on header
 custom_script= ""
 
+enableMermaid = true
+enableECharts = true
+enableAsciiCinema = true
+
 
 # Preloader
 [preloader]

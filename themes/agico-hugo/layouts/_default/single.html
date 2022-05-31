@@ -1,5 +1,18 @@
 {{ define "main" }}
 
+{{- if .Params.enableECharts }}
+  <script src="/js/echarts.common.min.js"></script>
+{{- end }}
+
+{{- if .Params.enableMermaid }}
+  <script src="/js/mermaid.js"></script>
+{{- end }}
+
+{{- if .Params.enableAsciiCinema }}
+  <script src="/js/asciinema-player.js"></script>
+{{- end }}
+
+
 
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}

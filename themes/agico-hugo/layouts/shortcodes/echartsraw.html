@@ -1,0 +1,21 @@
+{{- $id := dict "Scratch" .Page.Scratch | partial "function/id.html" -}}
+{{- $width := cond .IsNamedParams (.Get "width") (.Get 0) | default "100%" -}}
+{{- $height := cond .IsNamedParams (.Get "height") (.Get 1) | default "30rem" -}}
+<div class="echarts" id="{{ $id }}" style="width: {{ $width }}; height: {{ $height }};"></div>
+  <script>
+    var chartDom = document.getElementById("{{ $id }}");
+    isDarkMode = false
+    var myChart
+    try {
+      isDarkMode = document.getElementById('top').getAttribute('class').includes('dark') 
+    } catch {}
+    if (isDarkMode) {
+      myChart = echarts.init(chartDom, "dark");
+    } else {
+      myChart = echarts.init(chartDom);
+    }
+
+    {{ .Inner | safeJS }}
+
+    option && myChart.setOption(option);
+  </script>

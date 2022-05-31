@@ -7,95 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© DEOXY CORPORATION 2022</copyright>
-    <lastBuildDate>Wed, 10 Apr 2019 09:51:57 +0600</lastBuildDate><atom:link href="https://deoxy.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://deoxy.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.1/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>Automating Akamai / LetsEncrypt Cert Validation</title>
+      <link>https://deoxy.net/blog/automating-akamai/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/blog/cupidat-non-proident.1/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+      <guid>https://deoxy.net/blog/automating-akamai/</guid>
+      <description>CPS workflow   if (document.querySelector(&#39;body&#39;).getAttribute(&#39;class&#39;) != &#34;dark&#34;) { document.querySelectorAll(&#39;.mermaidspan&#39;).forEach(el = { el.</description>
     </item>
     
     <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.10/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>Implementing Content Security Policies, The Easy Way.</title>
+      <link>https://deoxy.net/blog/csp/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/blog/cupidat-non-proident.10/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.2/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.2/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.3/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.3/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.4/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.4/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.5/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.5/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.6/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.6/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.7/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.7/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.8/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.8/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Cupidat non proident sunt officia deserunt mollit anim.</title>
-      <link>https://deoxy.net/blog/cupidat-non-proident.9/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
-      
-      <guid>https://deoxy.net/blog/cupidat-non-proident.9/</guid>
-      <description>Elit duied aiusmod tempor did labore dolory Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+      <guid>https://deoxy.net/blog/csp/</guid>
+      <description>What&amp;rsquo;s a CSP? One of the mitigating defenses for XSS attacks and Clickjacking attacks is a good Content Security Policy (CSP).</description>
     </item>
     
   </channel>

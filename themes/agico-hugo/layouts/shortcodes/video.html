@@ -1,0 +1,14 @@
+<video
+  width="{{ if .Get "width" }}{{ .Get "width" }}{{ else }}100%{{ end }}"
+  height="{{ if .Get "height" }}{{ .Get "height" }}{{ else }}100%{{ end }}"
+  {{ if .Get "autoplay" }}autoplay{{ end }}
+  {{ if .Get "controls" }}autoplay{{ end }}
+  {{ if .Get "loop" }}loop{{ end }}
+  {{ if .Get "muted" }}muted{{ end }}
+  playsinline
+>
+  <source
+    src="{{ .Get "src" }}"
+    type="video/mp4"
+  >
+</video>

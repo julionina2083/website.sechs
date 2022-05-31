@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>letencrypt on Deoxy | Security is in our DNA</title>
+    <link>https://deoxy.net/tags/letencrypt/</link>
+    <description>Recent content in letencrypt on Deoxy | Security is in our DNA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© DEOXY CORPORATION 2022</copyright>
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://deoxy.net/tags/letencrypt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Akamai / LetsEncrypt Cert Validation</title>
+      <link>https://deoxy.net/blog/automating-akamai/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/blog/automating-akamai/</guid>
+      <description>CPS workflow   if (document.querySelector(&#39;body&#39;).getAttribute(&#39;class&#39;) != &#34;dark&#34;) { document.querySelectorAll(&#39;.mermaidspan&#39;).forEach(el = { el.</description>
+    </item>
+    
+  </channel>
+</rss>

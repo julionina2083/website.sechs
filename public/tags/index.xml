@@ -7,58 +7,94 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© DEOXY CORPORATION 2022</copyright>
-    <lastBuildDate>Wed, 10 Apr 2019 09:51:57 +0600</lastBuildDate><atom:link href="https://deoxy.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://deoxy.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Advice</title>
-      <link>https://deoxy.net/tags/advice/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>acme</title>
+      <link>https://deoxy.net/tags/acme/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/advice/</guid>
+      <guid>https://deoxy.net/tags/acme/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Business</title>
-      <link>https://deoxy.net/tags/business/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>akamai</title>
+      <link>https://deoxy.net/tags/akamai/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/business/</guid>
+      <guid>https://deoxy.net/tags/akamai/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Consultancy</title>
-      <link>https://deoxy.net/tags/consultancy/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>bash</title>
+      <link>https://deoxy.net/tags/bash/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/consultancy/</guid>
+      <guid>https://deoxy.net/tags/bash/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Finance</title>
-      <link>https://deoxy.net/tags/finance/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>dns</title>
+      <link>https://deoxy.net/tags/dns/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/finance/</guid>
+      <guid>https://deoxy.net/tags/dns/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Market Analysis</title>
-      <link>https://deoxy.net/tags/market-analysis/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>https</title>
+      <link>https://deoxy.net/tags/https/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/market-analysis/</guid>
+      <guid>https://deoxy.net/tags/https/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Marketing</title>
-      <link>https://deoxy.net/tags/marketing/</link>
-      <pubDate>Wed, 10 Apr 2019 09:51:57 +0600</pubDate>
+      <title>letencrypt</title>
+      <link>https://deoxy.net/tags/letencrypt/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://deoxy.net/tags/marketing/</guid>
+      <guid>https://deoxy.net/tags/letencrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>appsec</title>
+      <link>https://deoxy.net/tags/appsec/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/appsec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>content security policy</title>
+      <link>https://deoxy.net/tags/content-security-policy/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/content-security-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://deoxy.net/tags/js/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>playwright</title>
+      <link>https://deoxy.net/tags/playwright/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/playwright/</guid>
       <description></description>
     </item>
     
