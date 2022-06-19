@@ -1,19 +1,49 @@
 ############# English navigation ##############
 # main menu    
 [[main]]
-name = "Services"
+name = "Service"
 URL = "service"
 weight = 2
 
 [[main]]
-name = "Blog"
-URL = "blog"
+name = "Pricing"
+URL = "pricing"
 weight = 3
 
 [[main]]
 name = "Contact"
 URL = "contact"
 weight = 4
+
+[[main]]
+name = "About"
+URL = "about"
+weight = 5
+
+[[main]]
+name = "Pages"
+weight = 6
+hasChildren = true
+
+  [[main]]
+  parent = "Pages"
+  name = "Career"
+  URL = "career"
+  
+  [[main]]
+  parent = "Pages"
+  name = "Team"
+  URL = "team"
+
+  [[main]]
+  parent = "Pages"
+  name = "FAQ"
+  URL = "faq"
+  
+  [[main]]
+  parent = "Pages"
+  name = "Changelog"
+  URL = "changelog"
 
 #Footer menu
 [[footer]]

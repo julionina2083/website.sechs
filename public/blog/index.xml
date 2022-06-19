@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Sechs | Online Tools to Make Your Work Life Easier</title>
+    <link>https://deoxy.net/blog/</link>
+    <description>Recent content in Blog on Sechs | Online Tools to Make Your Work Life Easier</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© DEOXY CORPORATION 2022</copyright>
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://deoxy.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Implementing Content Security Policies, The Easy Way.</title>
+      <link>https://deoxy.net/blog/csp/csp/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/blog/csp/csp/</guid>
+      <description>What&amp;rsquo;s a CSP? One of the mitigating defenses for XSS attacks and Clickjacking attacks is a good Content Security Policy (CSP).</description>
+    </item>
+    
+  </channel>
+</rss>

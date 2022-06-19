@@ -3,8 +3,8 @@
 banner:
   enable : true
   bg_image : "images/background/banner.png"
-  title : "Cybersecurity is in our DNA"
-  watermark : "DEOXY"
+  title : "Online Tools to Make Your Work Life Easier"
+  watermark : "SECHS"
   content : "We are a team of highly technical engineers offering deep security expertise-- offering architect-level solutions to the toughest challenges faced by today’s leading industries across an ever-evolving digital threat landscape."
   image : "images/banner/banner-1.png"
   button:
@@ -17,12 +17,13 @@ partner:
   enable : true
   partner_logo:
   - "images/partner/client-logo-1.png"
-  - "images/partner/client-logo-3.png"
   - "images/partner/client-logo-2.png"
+  - "images/partner/client-logo-3.png"
+  - "images/partner/client-logo-4.png"
 
 ################################ Features ###############################
 feature:
-  enable : true
+  enable : false
   subtitle : "What we offer"
   title : "Modern Security Services"
   feature_item:
@@ -45,7 +46,7 @@ feature:
 
 ##################################### About #############################
 about:
-  enable : true
+  enable : false
   about_item:
         
     # about item loop
@@ -80,7 +81,7 @@ about:
 
 ############################ video ###############################
 promo_video:
-  enable : false
+  enable : true
   video_thumbnail : "images/check-video.png"
   video_link : "https://www.youtube.com/watch?v=VufDd-QL1c0"
   subtitle : "Check Video"
@@ -92,22 +93,25 @@ promo_video:
 
 # testimonial
 testimonial:
-  enable : false
+  enable : true
   subtitle : "testimonial"
   title : "What Our Clients Says"
   testimonial_item:
     # testimonial item loop
     - name : "Eric L. Dunn"
+      image: "images/testimonial/client-1.png"
       designation : "Cyber Army Brigade"
       content : "Without hesitation, if Kevin served with myself with the US Army Cyber Protection Brigade, he is fully qualified and exceeds the potential over his peers to take on any job regardless of the situation in which he finds himself within."
             
     # testimonial item loop
     - name : "Pradeep Simha"
+      image: "images/testimonial/client-2.png"
       designation : "Professional Service Delivery Manager"
       content : "Their commitment to innovation and our mutual customers’ success has made Deoxy a valuable part of our partner ecosystem."
             
     # testimonial item loop
     - name : "Bob Gill"
+      image: "images/testimonial/client-3.png"
       designation : "CISM Principal - Gill Consulting Services"
       content : "Is there a thing as being too good?"
 
@@ -129,6 +133,6 @@ download:
 pricing:
   enable : false
   section : "pricing"
-  show_items : 3
+  show_items : 4
   # pricing item comes from "content/*/pricing.md"
 ---

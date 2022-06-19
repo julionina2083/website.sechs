@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sechs | Online Tools to Make Your Work Life Easier</title>
+    <link>https://deoxy.net/tags/</link>
+    <description>Recent content in Tags on Sechs | Online Tools to Make Your Work Life Easier</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© DEOXY CORPORATION 2022</copyright>
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://deoxy.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>appsec</title>
+      <link>https://deoxy.net/tags/appsec/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/appsec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>content security policy</title>
+      <link>https://deoxy.net/tags/content-security-policy/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/content-security-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://deoxy.net/tags/js/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>playwright</title>
+      <link>https://deoxy.net/tags/playwright/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://deoxy.net/tags/playwright/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

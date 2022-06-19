@@ -4,12 +4,12 @@ favicon = "images/favicon.ico"
 # logo
 logo = "images/logo.png"
 # OpenGraph / Twitter Card metadata
-description = "Security is in our DNA"
-author = "DEOXY CORPORATION"
+description = "Online Tools to Make Your Work Life Easier"
+author = "SECHS CORPORATION"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
-address = "5830 E 2ND ST STE 7000 #5171, Casper, WY, 82609"
-mobile = "+17146846601"
+address = "Calle Dean Valdivia 148, Lima, 15046"
+mobile = "+51934300726"
 email = "sales@deoxy.net"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
