@@ -99,19 +99,19 @@ testimonial:
   testimonial_item:
     # testimonial item loop
     - name : "Eric L. Dunn"
-      image: "images/testimonial/client-1.png"
+      image: "images/testimonial/client-1-mod.png"
       designation : "Cyber Army Brigade"
       content : "Without hesitation, if Kevin served with myself with the US Army Cyber Protection Brigade, he is fully qualified and exceeds the potential over his peers to take on any job regardless of the situation in which he finds himself within."
             
     # testimonial item loop
     - name : "Pradeep Simha"
-      image: "images/testimonial/client-2.png"
+      image: "images/testimonial/client-2-mod.png"
       designation : "Professional Service Delivery Manager"
       content : "Their commitment to innovation and our mutual customers’ success has made Deoxy a valuable part of our partner ecosystem."
             
     # testimonial item loop
     - name : "Bob Gill"
-      image: "images/testimonial/client-3.png"
+      image: "images/testimonial/client-3-mod.png"
       designation : "CISM Principal - Gill Consulting Services"
       content : "Is there a thing as being too good?"
 
